@@ -1,7 +1,7 @@
 <?php
 namespace App;
 
-require_once('model/Product.php');
+require_once('Autoloader.php');
 
 use App\Model\Product;
 
