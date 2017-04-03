@@ -8,23 +8,23 @@ You must write a webscrapper to extract information from an amazon product page.
 - No PHP framework use
 - You can split the code into several files if needed
 - Script must be compatible with the following product pages :
----> http://www.amazon.com/PLAY-BANG-OLUFSEN-Wireless-Headphones/dp/B00R45Z2WU
----> http://www.amazon.com/gp/product/B00M0QVG3W/
----> http://www.amazon.com/gp/product/B00PQWIZPY
+	- http://www.amazon.com/PLAY-BANG-OLUFSEN-Wireless-Headphones/dp/B00R45Z2WU
+	- http://www.amazon.com/gp/product/B00M0QVG3W/
+	- http://www.amazon.com/gp/product/B00PQWIZPY
 
 - The entry point is a php file calling method main calling the following code (productId being amazon id like B00R45Z2WU, B00M0QVG3W) :
 $product = new Product($productId);
 - the following information must be available in the product object :
----> Product title
----> Manufacturer
----> prices (regular price, special price)
----> every "Product Information" as array
----> Array of pictures Urls
----> Offers list (available from http://www.amazon.com/gp/offer-listing/XXXX/, XXX being the amazon id)
-------> Price
-------> Shipping
-------> Seller name
-------> Condition (new or used)
+	- Product title
+	- Manufacturer
+	- prices (regular price, special price)
+	- every "Product Information" as array
+	- Array of pictures Urls
+	- Offers list (available from http://www.amazon.com/gp/offer-listing/XXXX/, XXX being the amazon id)
+		- Price
+		- Shipping
+		- Seller name
+		- Condition (new or used)
 
 ## Remarks
 
