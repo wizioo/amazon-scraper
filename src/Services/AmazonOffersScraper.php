@@ -2,8 +2,6 @@
 
 namespace App\Services;
 
-require_once('Scraper.php');
-
 use App\Services\Scraper;
 
 class AmazonOffersScraper extends Scraper
